@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: relative;
+}
+.container {
+    display: inline-block;
+    transform: translateX(-50%),translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+}
+.card1 {
+    width: 10px;
+    height: 50px;
+    background-color: rgb(16, 179, 207);
+    animation-delay: 0.1s;
+}
+.card2{
+    width: 10px;
+    height: 50px;
+    background-color: rgb(163, 7, 163);
+    animation-delay: 0.2s;
+}
+.card3{
+    width: 10px;
+    height: 50px;
+    background-color: rgb(255, 238, 0);
+    animation-delay: 0.3s;
+}
+.card4 {
+    width: 10px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    animation-delay: 0.4s;
+}
+.card5 {
+    width: 10px;
+    height: 50px;
+    background-color: rgb(51, 255, 0);
+    animation-delay: 0.5s;
+}
+@keyframes blackk {
+    20%, 100%{
+        transform: scaley(1.5);
+    }
+}
+.container div{
+    margin-left: 2px;
+    animation-name: blackk;
+    animation-timing-function: linear;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    transform: scaleY(0.5);
+}
